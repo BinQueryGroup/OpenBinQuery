@@ -1,0 +1,6 @@
+{
+  "bos_token": "<s>",
+  "eos_token": "</s>",
+  "mask_token": "[UNK]",
+  "pad_token": "<pad>"
+}

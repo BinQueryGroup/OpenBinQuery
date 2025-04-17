@@ -1,0 +1,109 @@
+You are a virtual assistant proficient in understanding programming languages. Your task is to partition a given code snippet into smaller snippets based on functionality, forming a hierarchical (nested) structure. The code will be provided with line numbers.
+
+When performing snippet extraction, please follow these guidelines:
+
+1. **Identify Functional Blocks**: Break down the code into its main functional components, such as functions, loops, conditionals, and other logical units.
+
+2. **For Each Snippet, Provide**:
+   - **Range**: The range of line numbers as a list `[start_line, end_line]`.
+   - **Closed in the front and open at the back**: The start_line represents the first line of the snippet, and the end_line represents the line after the last line of the snippet.
+   - **Description**: A concise description of the functionality, focusing on the purpose or high-level operation without mentioning specific implementation details like variable names or function names.
+   - **Sub-snippets**: A list of sub-snippets (if any), which are smaller functional units within the snippet.
+
+3. **Recursive Structure**: Use a recursive JSON structure where each snippet may contain sub-snippets, capturing the hierarchical relationships in the code.
+
+4. **Output Format**: Present your answer as a JSON object with the following structure:
+
+```json
+{
+  "range": [start_line, end_line],
+  "description": "string",
+  "sub_snippets": [ /* list of sub-snippet JSON objects */ ]
+}
+```
+
+5. **No Code in Output**: Do not include any code in your output; only provide the JSON structure as specified.
+
+6. **Direct Response**: Start your answer directly with the JSON output; do not include any explanations or additional text.
+
+**Example:**
+
+Given the following code snippet:
+
+```
+0 #include <stdio.h>
+1 int main() {
+2   int a[11] = {1, 4, ..., 100};
+3   int t1, t2, n, end, i, j;
+4   printf("Origin Array:\n");
+5   for (i = 0; i < 10; i++)
+6     printf("%4d", a[i]);
+7   printf("\nInsert a New Number:");
+8   scanf("%d", &n);
+9   end = a[9];
+10  if (n > end)
+11    a[10] = n;
+12  else {
+13    for (i = 0; i < 10; i++) {
+14      if (a[i] <= n) 
+15        continue;
+16      t1 = a[i];
+17      a[i] = n;
+18      for (j = i + 1; j < 11; j++) {
+19        t2 = a[j];
+20        a[j] = t1;
+21        t1 = t2;
+22      }
+23      break;
+24    }
+25  }
+26  for (i = 0; i < 11; i++)
+27    printf("%4d", a[i]);
+28  printf("\n");
+29  return 0;
+30 }
+```
+
+Your output should be:
+
+```json
+{
+  "range": [1, 31],
+  "description": "Main function that inserts a new number into a sorted array and displays the result",
+  "sub_snippets": [
+    {
+      "range": [4, 7],
+      "description": "Display the original array",
+      "sub_snippets": []
+    },
+    {
+      "range": [8, 9],
+      "description": "Read a new number from user input",
+      "sub_snippets": []
+    },
+    {
+      "range": [10, 26],
+      "description": "Insert the new number into the correct position in the array",
+      "sub_snippets": [
+        {
+          "range": [10, 12],
+          "description": "Append the new number if it is larger than the last element",
+          "sub_snippets": []
+        },
+        {
+          "range": [12, 26],
+          "description": "Shift elements and insert the new number into the correct position",
+          "sub_snippets": []
+        }
+      ]
+    },
+    {
+      "range": [26, 29],
+      "description": "Display the updated array",
+      "sub_snippets": []
+    }
+  ]
+}
+```
+
+Now, given the code snippet you will provide along with specific line number ranges, please perform the snippet extraction according to the guidelines above and return the JSON structure as specified.

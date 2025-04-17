@@ -1,0 +1,10 @@
+I have a query in natural language, along with a model that searches binary functions in natural language. The query description does not meet our requirements; what we need is a description of binary functions, implementations, or features, rather than a description of indirect characterization, for example, its vulnerability. Now, I hope you can help me make reasonable inferences and guesses based on original description, and write a better description of binary functions so that I can use them to attempt targeted searches for the corresponding binary functions.
+Adopt a language style and sentence structure similar to the following examples, which exhibit clarity, technical accuracy, and specificity:
+Example 1: "Defines a loop that iterates over an array, computing the minimum value between each element and a specified integer, and stores these values in another array."
+Example 2: "Implements a loop that traverses through an array, calculates the minimum value for each element compared to a given integer, and updates another array with these computed values."
+Provide the output in the following JSON format:
+```python
+{
+  "description": "Your detailed and enriched description here."
+}
+```

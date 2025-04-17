@@ -1,0 +1,31 @@
+{
+  "_data_files": [
+    {
+      "filename": "data-00000-of-00001.arrow"
+    }
+  ],
+  "_fingerprint": "9bbc9be99bdf49cd",
+  "_format_columns": [
+    "project",
+    "compiler",
+    "opt",
+    "package",
+    "binary",
+    "address",
+    "function_name",
+    "asm",
+    "no_strip_asm",
+    "cr",
+    "src",
+    "asm_range_list",
+    "src_range_list",
+    "src_asm_range_map",
+    "snippets_from_llm",
+    "snippets_from_rule",
+    "description"
+  ],
+  "_format_kwargs": {},
+  "_format_type": null,
+  "_output_all_columns": false,
+  "_split": null
+}

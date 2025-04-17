@@ -1,0 +1,56 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "project": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "compiler": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "opt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "package": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "binary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "address": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "function_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "source_code": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "addr_to_source_code_file_line": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "asm": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "no_strip_asm": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "cr": {
+      "dtype": "float64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

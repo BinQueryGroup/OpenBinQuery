@@ -1,0 +1,84 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "project": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "compiler": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "opt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "package": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "binary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "address": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "function_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "asm": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "no_strip_asm": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "cr": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "src": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "asm_range_list": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "src_range_list": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "src_asm_range_map": {
+      "dtype": "binary",
+      "_type": "Value"
+    },
+    "snippets_from_llm": {
+      "feature": {
+        "feature": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "snippets_from_rule": {
+      "feature": {
+        "feature": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

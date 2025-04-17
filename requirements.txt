@@ -1,0 +1,15 @@
+transformers
+torch
+accelerate
+datasets
+fire
+zstd
+loguru
+sark
+matplotlib
+wandb
+deepspeed
+onnx
+openai
+tiktoken
+wordcloud
