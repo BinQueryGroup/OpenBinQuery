@@ -60,3 +60,26 @@ If you wish to reproduce our results, you can use the data processing pipeline a
 
 Please note that training a high-quality model requires significant computational resources and time.
 
+# Bibtex
+
+If this work is help for for your research, please consider citing the following Bibtex entry.
+
+```latex
+@inproceedings{Zhang2025BinQuery,
+  author    = {Zhang, Bolun and Gao, Zeyu and Wang, Hao and Cui, Yuxin and Qin, Siliang and Zhang, Chao and Chen, Kai and Zhao, Beibei},
+  title     = {{BinQuery: A Novel Framework for Natural Language-Based Binary Code Retrieval}},
+  year      = {2025},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  booktitle = {Proceedings of the ACM on Software Engineering},
+  articleno = {ISSTA052},
+  numpages  = {22},
+  month     = {jul},
+  series    = {ISSTA '25},
+  volume    = {2},  
+  doi       = {10.1145/3728927},
+  url       = {https://doi.org/10.1145/3728927},
+  note      = {Appears in the Proceedings of the ACM International Symposium on Software Testing and Analysis (ISSTA '25)} 
+}
+```
+
